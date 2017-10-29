@@ -1,0 +1,47 @@
+*.d
+*.o
+*.bin
+*.hex
+*.list
+*.srec
+*.a
+*.elf
+lib/*.ld
+*.stylecheck
+*.swp
+\#*
+.\#*
+*~
+*.map
+*.log
+html/
+latex/
+*.pdf
+*.tag
+.DS_Store
+# These are generated
+include/unicore-mx/**/nvic.h
+include/unicore-mx/**/**/nvic.h
+lib/**/vector_nvic.c
+lib/**/**/vector_nvic.c
+include/libopencmsis/efm32/
+include/libopencmsis/lm3s/
+include/libopencmsis/lpc13xx/
+include/libopencmsis/lpc17xx/
+include/libopencmsis/lpc43xx/
+include/libopencmsis/sam/
+include/libopencmsis/stm32/
+include/libopencmsis/vf6xx/
+include/libopencmsis/nrf/
+include/unicore-mx/common/dwc_otg.h
+include/unicore-mx/stm32/common/st_usbfs_common.h
+include/unicore-mx/stm32/common/st_usbfs_v1.h
+include/unicore-mx/stm32/common/st_usbfs_v2.h
+
+# netbeans, intellij, eclipse project files
+nbproject/
+.idea/
+.project
+
+# cscope databases
+cscope.out
