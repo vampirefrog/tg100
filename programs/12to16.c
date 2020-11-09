@@ -12,8 +12,8 @@ int main(int argc, char **argv) {
 		while(!feof(f)) {
 			int r = fread(b, 1, 3, f);
 			if(r == 0) break;
-			c[0] = (b[0] << 8) | (b[1] & 0xf0);
-			c[1] = (b[2] << 8) | ((b[1] & 0x0f) << 4);
+			c[0] = (b[0] << 8) | ((b[1] & 0x0f) << 4);
+			c[1] = (b[2] << 8) | ((b[1] & 0xf0) << 0);
 			fwrite(c, 2, r > 2 ? 2 : 1, o);
 		}
 		fclose(o);
